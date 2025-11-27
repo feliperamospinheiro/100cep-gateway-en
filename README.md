@@ -153,11 +153,15 @@ Arquivo: `/docs/self_assessment.md`
 
 **Felipe Pinheiro**  
 LinkedIn: *[link aqui](https://www.linkedin.com/in/feliperamospinheiro/)*  
+
 GitHub: *[link aqui](https://github.com/feliperamospinheiro)*
 
 # Créditos
 
 Dataset: *[Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)*
+
 Autor: Olist & André Sionek
+
 DOI Citation: *[DOI](https://doi.org/10.34740/kaggle/dsv/195341)*
+
 Licença: *[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)*
