@@ -1,1 +1,177 @@
-# 100cep-gateway
+# 🏦 100cep Gateway — MVP de Engenharia de Dados
+Pipeline de dados construído no Databricks para simular o processamento de pedidos, pagamentos e chargebacks de uma empresa fictícia do setor de pagamentos, a **100cep Gateway**. O MVP segue boas práticas de Data Lakehouse, utilizando Delta Lake, Unity Catalog e a arquitetura **Bronze → Silver → Gold**.
+
+---
+
+# 🎯 1. Objetivo do Projeto
+
+Este MVP tem como objetivo construir um pipeline de engenharia de dados completo para:
+
+- ingerir dados transacionais de e-commerce;  
+- padronizar, relacionar e organizar entidades (pedidos, pagamentos, itens, clientes, sellers);  
+- gerar camadas analíticas para monitoramento de risco, antifraude e chargebacks;  
+- responder perguntas de negócio típicas de empresas de pagamentos, adquirentes e gateways.
+
+O foco central é entender:
+
+> **Como a 100cep Gateway pode monitorar, conciliar e antecipar ocorrências de pagamentos e chargebacks utilizando dados transacionais?**
+
+Todas as perguntas de negócio estão documentadas em:  
+📄 `/docs/business_questions.md`
+
+---
+
+# 📥 2. Coleta dos Dados
+
+Os dados utilizados foram obtidos no Kaggle (**Brazilian E-Commerce Public Dataset by Olist**), amplamente usado em estudos e projetos educacionais.
+
+Processo adotado:
+
+1. Download manual dos arquivos CSV.
+2. Upload para o **Unity Catalog Volumes** no Databricks, garantindo:
+   - armazenamento em nuvem,
+   - versionamento pelo UC,
+   - padronização da ingestão no nível Bronze.
+
+⚠ Não houve uso de web scraping ou dados sensíveis.  
+⚠ Nenhum dado interno ou confidencial de empresas reais foi utilizado.
+
+Evidências (screenshots) estão na pasta: `/docs/screenshots/coleta`.
+
+---
+
+# 🧱 3. Modelagem de Dados
+
+Foi adotado um modelo **Lakehouse** com tabelas **flat por conceito**:
+
+### 🔹 Bronze
+- Armazenamento dos arquivos *exatamente como chegaram*.
+- Sem limpeza, sem inferência, sem padronização.
+- Garantia de auditabilidade.
+
+### 🔹 Silver
+- Padronização de tipos
+- Deduplicação
+- Tratamento de nulos
+- Correção de colunas derivadas
+- Relação entre entidades (join lógico)
+
+### 🔹 Gold
+- Tabelas analíticas orientadas ao negócio
+- KPIs de chargebacks, GMV, ticket médio
+- Modelos por método de pagamento, seller e região
+
+### 📄 Catálogo de Dados
+Foi criado um **Data Catalog** contendo:
+
+- Nome da coluna  
+- Tipo de dado  
+- Domínio esperado  
+- Valores mínimos e máximos (numéricos)  
+- Categorias possíveis (categóricos)  
+- Descrição funcional  
+- Camada de origem  
+- Linhagem Bronze → Silver → Gold
+
+Arquivo: `/docs/data_catalog.md`
+
+---
+
+# 🚀 4. Carga (ETL / ELT)
+
+A carga foi estruturada em três passos principais:
+
+### 1) Ingestão (Bronze)
+- Leitura dos CSVs diretamente do Volume UC  
+- Persistência em Delta  
+- Normalização de nomes de colunas
+
+### 2) Transformação (Silver)
+- Conversão de tipos datetime  
+- Correção de colunas categóricas  
+- Padronização de campos numéricos  
+- Exclusão de duplicadas  
+- Consolidação de tabelas relacionadas
+
+### 3) Modelagem Analítica (Gold)
+- Tabelas agregadas  
+- Métricas de operação e risco  
+- Junções entre pedidos, pagamentos e chargebacks
+
+Documentação do ETL: `/docs/etl_documentation.md`  
+Evidências de execução: `/docs/screenshots/carga`
+
+---
+
+# 📊 5. Análises Realizadas
+
+## 🔍 a) Qualidade dos Dados
+Foi feita uma análise de:
+
+- valores ausentes  
+- valores fora do domínio  
+- inconsistências entre tabelas  
+- dados duplicados  
+- erros de formato  
+
+As correções foram aplicadas na camada Silver.  
+Evidências em `/docs/screenshots/data_quality`.
+
+---
+
+## 🧠 b) Solução do Problema (Perguntas de Negócio)
+
+As análises Gold respondem perguntas como:
+
+- Qual o GMV da operação?  
+- Qual o ticket médio por seller, cidade e método de pagamento?  
+- Qual a taxa de chargeback total e por categoria?  
+- Quais sellers apresentam maior risco?  
+- Existem inconsistências entre pedidos e pagamentos?  
+- Atraso na entrega tem correlação com chargeback?  
+- Quais métodos têm maior proporção de disputas?  
+
+As respostas detalhadas estão em:  
+📄 `/docs/analysis.md`
+
+---
+
+# 📁 6. Estrutura do Repositório
+/
+├── README.md
+├── notebooks/
+│ ├── 01_bronze_ingestion.py
+│ ├── 02_silver_cleaning.py
+│ ├── 03_gold_analytics.py
+│ └── utils/
+├── data/ (opcional para versionamento)
+├── docs/
+│ ├── business_questions.md
+│ ├── data_catalog.md
+│ ├── etl_documentation.md
+│ ├── analysis.md
+│ └── screenshots/
+└── architecture/
+├── lakehouse_diagram.png
+└── erd.png
+
+---
+
+# 📝 7. Autoavaliação
+
+Discussão final sobre:
+
+- objetivos atingidos e não atingidos;  
+- dificuldades enfrentadas;  
+- limitações naturais do MVP;  
+- melhorias e próximos passos (streaming, automação, dashboards, monitoramento).
+
+Arquivo: `/docs/self_assessment.md`
+
+---
+
+# 👨‍💻 Autor
+
+**Felipe Pinheiro**  
+LinkedIn: *link aqui*  
+GitHub: *link aqui*
