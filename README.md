@@ -4,8 +4,8 @@
   <img src="./logo/100cep_gateway.png" alt="Logo 100cep Gateway" width="260">
 </p>
 
-A 100cep é uma empresa de infraestrutura de pagamentos borderless (*sem CEP*), especializada em processar pagamentos globais de forma rápida, segura e interoperável.
-Nosso objetivo é permitir transações rápidas, seguras e sem fronteiras — afinal, somos “100 CEP”: sem país, estado ou cidade limitando o fluxo dos pagamentos.
+A 100cep é uma empresa de infraestrutura de pagamentos borderless, especializada em processar pagamentos globais de forma rápida, segura e interoperável.
+Nosso objetivo é permitir transações rápidas, seguras e sem fronteiras — afinal, somos “100cep”: sem país, estado ou cidade limitando o fluxo dos pagamentos.
 
 # MVP Engenharia de Dados
 
@@ -163,7 +163,7 @@ Arquivo: `/docs/self_assessment.md`
 # 👨‍💻 Autor
 
 **Felipe Pinheiro**  
-<<<<<<< HEAD
+
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:felipervmospinheiro@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/feliperamospinheiro)
 
@@ -185,5 +185,4 @@ Autor: Olist & André Sionek
 
 DOI Citation: *[DOI](https://doi.org/10.34740/kaggle/dsv/195341)*
 
->>>>>>> 75803853d5356138f6a62005bc4c6b5ecdbc59ae
 Licença: *[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)*
