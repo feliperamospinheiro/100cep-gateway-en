@@ -1,9 +1,7 @@
 # 🏦 100cep Gateway
 
-<p align="center">
-  <img src="./logo/100cep_gateway.png" alt="Logo 100cep Gateway" width="260">
-</p>
-git 
+<p align="center"> <img src="./logo/100cep_gateway.png" alt="Logo 100cep Gateway" width="100%"></p>
+
 A 100cep é uma empresa de infraestrutura de pagamentos borderless, especializada em processar pagamentos globais de forma rápida, segura e interoperável.
 Nosso objetivo é permitir transações rápidas, seguras e sem fronteiras — afinal, somos “100cep”: sem país, estado ou cidade limitando o fluxo dos pagamentos.
 
@@ -55,19 +53,19 @@ Evidências (screenshots) estão na pasta: `/docs/screenshots/coleta`.
 
 Foi adotado um modelo **Lakehouse** com tabelas **flat por conceito**:
 
-### 🔹 Bronze
+### 🥉 Bronze
 - Armazenamento dos arquivos *exatamente como chegaram*.
 - Sem limpeza, sem inferência, sem padronização.
 - Garantia de auditabilidade.
 
-### 🔹 Silver
+### 🥈 Silver
 - Padronização de tipos
 - Deduplicação
 - Tratamento de nulos
 - Correção de colunas derivadas
 - Relação entre entidades (join lógico)
 
-### 🔹 Gold
+### 🥇 Gold
 - Tabelas analíticas orientadas ao negócio
 - KPIs de chargebacks, GMV, ticket médio
 - Modelos por método de pagamento, seller e região
