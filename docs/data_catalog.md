@@ -61,8 +61,8 @@
 | preco_total | decimal(16,2) | Preço total do pedido, incluindo o preço do produto e o custo de envio. | Total order price, including product price and shipping cost. |
 | frete_total | decimal(15,2) | Custo total do frete em formato decimal com até 15 dígitos e 2 casas decimais, contendo apenas valores positivos. | Total shipping cost in a decimal format with up to 15 digits and 2 decimal places, only containing positive values. |
 | status_pedido | string | Status de entrega atual do pedido. | Current deliver status of the order. |
----
 
-# Linhagem de Dados
+
+<h2 align="center">Linhagem de Dados</h2>
 - Kaggle → Bronze → Silver → Gold  
 - Transformações documentadas em `/docs/etl_documentation.md`.  
