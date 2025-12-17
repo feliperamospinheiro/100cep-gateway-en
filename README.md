@@ -1,6 +1,6 @@
 <h1 align="center">100cep Gateway</h1>
 
-<p align="center"> <img src="./logo/100cep-gateway.png" alt="Logo 100cep Gateway" width="100%"></p>
+<p align="center"> <img src="./docs/images/logo/100cep-gateway.png" alt="Logo 100cep Gateway" width="100%"></p>
 
 A 100cep Gateway é uma empresa de infraestrutura de pagamentos borderless, especializada em processar pagamentos globais de forma rápida, segura e interoperável.Nosso objetivo é permitir **transações rápidas**, **seguras** e **sem fronteiras** — afinal, somos _100cep_: sem _cidade_, _estado_ ou _país_ limitando o fluxo dos pagamentos.
 

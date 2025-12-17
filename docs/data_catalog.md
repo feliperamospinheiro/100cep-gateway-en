@@ -3,7 +3,7 @@
 
 <h2 align="center">dim_chargebacks</h2>
 
-<p align="center"> <img src="docs/images/databricks/dim_chargebacks.jpg" alt="Logo 100cep Gateway" width="100%"></p>
+<p align="center"> <img src="./images/databricks/dim_chargebacks.jpg" alt="dim_chargebacks" width="100%"></p>
 
 | Coluna | Tipo | Descrição | Description | 
 | ------ | ---- | --------- | ----------- | 
@@ -15,7 +15,7 @@
 
 <h2 align="center">dim_clientes</h2>
 
-<p align="center"> <img src="docs/images/databricks/dim_clientes.jpg" alt="Logo 100cep Gateway" width="100%"></p>
+<p align="center"> <img src="./images/databricks/dim_clientes.jpg" alt="dim_clientes" width="100%"></p>
 
 | Coluna | Tipo | Descrição | Description | 
 | ------ | ---- | --------- | ----------- | 
@@ -25,7 +25,7 @@
 
 <h2 align="center">dim_data</h2>
 
-<p align="center"> <img src="docs/images/databricks/dim_data.jpg" alt="Logo 100cep Gateway" width="100%"></p>
+<p align="center"> <img src="./images/databricks/dim_data.jpg" alt="dim_data" width="100%"></p>
 
 | Coluna | Tipo | Descrição | Description | 
 | ------ | ---- | --------- | ----------- | 
@@ -38,7 +38,7 @@
 
 <h2 align="center">dim_geolocalizacao</h2>
 
-<p align="center"> <img src="docs/images/databricks/dim_geolocalizacao.jpg" alt="Logo 100cep Gateway" width="100%"></p>
+<p align="center"> <img src="./images/databricks/dim_geolocalizacao.jpg" alt="dim_geolocalizacao" width="100%"></p>
 
 | Coluna | Tipo | Descrição | Description | 
 | ------ | ---- | --------- | ----------- | 
@@ -50,7 +50,7 @@
 
 <h2 align="center">dim_vendedores</h2>
 
-<p align="center"> <img src="docs/images/databricks/dim_vendedores.jpg" alt="Logo 100cep Gateway" width="100%"></p>
+<p align="center"> <img src="./images/databricks/dim_vendedores.jpg" alt="dim_vendedores" width="100%"></p>
 
 | Coluna | Tipo | Descrição | Description | 
 | ------ | ---- | --------- | ----------- | 
@@ -59,7 +59,7 @@
 
 <h2 align="center">fato_transacoes</h2>
 
-<p align="center"> <img src="docs/images/databricks/fato_transacoes.jpg" alt="Logo 100cep Gateway" width="100%"></p>
+<p align="center"> <img src="./images/databricks/fato_transacoes.jpg" alt="ato_transacoes" width="100%"></p>
 
 | Coluna | Tipo | Descrição | Description | 
 | ------ | ---- | --------- | ----------- | 
