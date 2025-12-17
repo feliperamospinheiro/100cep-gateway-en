@@ -1,13 +1,32 @@
 <h1 align="center">100cep Gateway</h1>
 
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow.svg)
-![Engenharia de Dados](https://img.shields.io/badge/Engenharia%20de%20Dados-Data%20Engineering-blue)
-![Databricks](https://img.shields.io/badge/Databricks-Data%20Platform-orange?logo=databricks&logoColor=white)
-![Apache Spark](https://img.shields.io/badge/Apache%20Spark-Spark-orange?logo=apachespark&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-Query%20Language-blue?logo=postgresql&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-purple?logo=pandas&logoColor=white)
-![Seaborn](https://img.shields.io/badge/Seaborn-Data%20Visualization-lightblue)
-![GeoPandas](https://img.shields.io/badge/GeoPandas-Geospatial%20Data-green)
+<p align="center">
+  <a href="https://shields.io/">
+    <img src="https://img.shields.io/badge/status-em%20desenvolvimento-yellow.svg" alt="Status">
+  </a>
+  <a href="https://www.databricks.com/">
+    <img src="https://img.shields.io/badge/Databricks-Data%20Platform-orange?logo=databricks&logoColor=white" alt="Databricks">
+  </a>
+  <a href="https://en.wikipedia.org/wiki/Data_engineering">
+    <img src="https://img.shields.io/badge/Engenharia%20de%20Dados-Data%20Engineering-blue" alt="Engenharia de Dados">
+  </a>
+  <a href="https://spark.apache.org/">
+    <img src="https://img.shields.io/badge/Apache%20Spark-Spark-orange?logo=apachespark&logoColor=white" alt="Apache Spark">
+  </a>
+  <a href="https://www.postgresql.org/docs/">
+    <img src="https://img.shields.io/badge/SQL-Query%20Language-blue?logo=postgresql&logoColor=white" alt="SQL">
+  </a>
+  <a href="https://pandas.pydata.org/docs/">
+    <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-purple?logo=pandas&logoColor=white" alt="Pandas">
+  </a>
+  <a href="https://seaborn.pydata.org/">
+    <img src="https://img.shields.io/badge/Seaborn-Data%20Visualization-lightblue" alt="Seaborn">
+  </a>
+  <a href="https://geopandas.org/en/stable/">
+    <img src="https://img.shields.io/badge/GeoPandas-Geospatial%20Data-green" alt="GeoPandas">
+  </a>
+</p>
+
 
 <p align="center"> <img src="./docs/images/logo/100cep-gateway.png" alt="Logo 100cep Gateway" width="100%"></p>
 
