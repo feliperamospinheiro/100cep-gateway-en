@@ -38,10 +38,40 @@ O projeto segue boas práticas de Data Lakehouse, utilizando Delta Lake, Unity C
 
 <p align="center"> <img src="./docs/images/logo/100cep-gateway.png" alt="Logo 100cep Gateway" width="100%"></p>
 
-A 100cep Gateway é uma empresa de infraestrutura de pagamentos borderless, especializada em processar pagamentos globais de forma rápida, segura e interoperável.Nosso objetivo é permitir **transações rápidas**, **seguras** e **sem fronteiras** — afinal, somos _100cep_: sem _cidade_, _estado_ ou _país_ limitando o fluxo dos pagamentos.
+A **100cep Gateway** é uma empresa fictícia de infraestrutura de pagamentos borderless, especializada em processar pagamentos globais de forma rápida, segura e interoperável.
+
+Nosso objetivo é permitir **transações rápidas**, **seguras** e **sem fronteiras** — afinal, somos _100cep_: sem _cidade_, _estado_ ou _país_ limitando o fluxo dos pagamentos.
+
+### 🔑 Principais Características
+- 🌍 **Pagamentos Globais**: Processamento sem restrições geográficas
+- ⚡ **Alta Performance**: Infraestrutura preparada para alto volume de transações
+- 🔒 **Segurança**: Monitoramento de fraude e chargebacks em tempo real
+- 📊 **Analytics**: Dashboards e métricas para tomada de decisão
 
 ---
-<h2 align="center">Objetivo do Projeto</h2>
+
+<h2 align="center">🛠️ Tecnologias Utilizadas</h2>
+
+### Plataforma e Armazenamento
+- **Databricks**: Plataforma de dados unificada
+- **Delta Lake**: Formato de armazenamento transacional
+- **Unity Catalog**: Governança e catalogação de dados
+- **Volumes UC**: Armazenamento de arquivos brutos
+
+### Processamento e Análise
+- **Apache Spark**: Engine de processamento distribuído
+- **PySpark**: API Python para Spark
+- **SQL**: Queries analíticas e transformações
+- **Pandas**: Análise exploratória de dados
+
+### Visualização e Modelagem
+- **Seaborn**: Visualizações estatísticas
+- **Matplotlib**: Gráficos e plots
+- **GeoPandas**: Análises geoespaciais
+- **dbdiagram.io**: Modelagem de dados
+
+---
+<h2 align="center">🎯 Objetivo do Projeto</h2>
 
 Este MVP tem como objetivo construir um pipeline de engenharia de dados completo para:
 
@@ -55,7 +85,7 @@ O foco central é entender:
 > **Como a 100cep Gateway pode monitorar, conciliar e antecipar ocorrências de pagamentos e chargebacks utilizando dados transacionais?**
 
 Todas as perguntas de negócio estão documentadas em:  
-📄 `/docs/business_questions.md`
+📄 [/docs/perguntas.md](docs/perguntas.md)
 
 ---
 
@@ -74,7 +104,7 @@ Processo adotado:
 ⚠ Não houve uso de web scraping ou dados sensíveis.  
 ⚠ Nenhum dado interno ou confidencial de empresas reais foi utilizado.
 
-Evidências (screenshots) estão na pasta: `/docs/screenshots/coleta`.
+📸 **Evidências**: Screenshots do processo de coleta estão disponíveis na pasta `/docs/images/databricks/`.
 
 ---
 
@@ -111,7 +141,7 @@ Foi criado um **Data Catalog** contendo:
 - Camada de origem  
 - Linhagem Bronze → Silver → Gold
 
-Arquivo: `/docs/data_catalog.md`
+📄 **Documentação completa**: [/docs/data_catalog.md](docs/data_catalog.md)
 
 ---
 <h2 align="center">Carga (ETL / ELT)</h2>
@@ -135,8 +165,8 @@ A carga foi estruturada em três passos principais:
 - Métricas de operação e risco  
 - Junções entre pedidos, pagamentos e chargebacks
 
-Documentação do ETL: `/docs/etl_documentation.md`  
-Evidências de execução: `/docs/screenshots/carga`
+📄 **Documentação completa do ETL**: [/docs/etl.md](docs/etl.md)  
+📸 **Evidências de execução**: Screenshots disponíveis em `/docs/images/databricks/`
 
 ---
 <h2 align="center">Análises Realizadas</h2>
@@ -150,8 +180,13 @@ Foi feita uma análise de:
 - dados duplicados  
 - erros de formato  
 
-As correções foram aplicadas na camada Silver.  
-Evidências em `/docs/screenshots/data_quality`.
+As correções foram aplicadas na camada Silver, garantindo:
+- ✅ Dados consistentes e confiáveis
+- ✅ Tipos de dados corretos
+- ✅ Valores dentro dos domínios esperados
+- ✅ Relacionamentos íntegros entre tabelas
+
+📸 **Evidências**: Screenshots disponíveis em `/docs/images/databricks/`
 
 ---
 
@@ -166,7 +201,13 @@ As análises Gold respondem perguntas como:
 - **Quais estados apresentam as maiores taxas de chargeback?**  
 
 As respostas detalhadas estão em:  
-📄 `/docs/analysis.md`
+📄 [/docs/perguntas.md](docs/perguntas.md)
+
+### 📊 Principais Insights
+- Credit card é o método de pagamento predominante
+- Taxa de chargeback varia significativamente por estado
+- Correlação entre método de pagamento e risco de chargeback
+- Padrões sazonais no faturamento de 2017
 
 ---
 <h2 align="center">Autoavaliação</h2>
@@ -178,7 +219,7 @@ Discussão final sobre:
 - limitações naturais do MVP;  
 - melhorias e próximos passos (streaming, automação, dashboards, monitoramento).
 
-Arquivo: `/docs/self_assessment.md`
+📄 **Documentação completa**: [/docs/autoavaliação.md](docs/autoavaliação.md)
 
 ---
 
