@@ -17,7 +17,7 @@ This document contains the **complete documentation** of the data model for the 
 
 ### Relationship Table
 
-| Origin Table | Column FK | Destiny Table | Column PK | Cardinalidade |
+| Source Table | Column FK | Target Table | Column PK | Cardinalidade |
 |--------------|-----------|----------------|-----------|---------------|
 | **fato_transacoes** | cliente_id | dim_clientes | cliente_id | N:1 |
 | **fato_transacoes** | vendedor_id | dim_vendedores | vendedor_id | N:1 |
