@@ -89,7 +89,7 @@ Our goal is to enable **fast**, **secure** and **borderless** transactions — a
 - **dbdiagram.io**: Data modeling
 
 ---
-<h2 align="center">Project Objective</h2>
+<h2 align="center">Project Goals</h2>
 
 This MVP aims to build a complete data engineering pipeline to:
 
@@ -187,7 +187,7 @@ The load was structured in three main steps:
 📸 **Execution evidence**: Screenshots available in `/docs/images/databricks/`
 
 ---
-<h2 align="center">Analyses Performed</h2>
+<h2 align="center">Analysis</h2>
 
 ## a) Data Quality
 An analysis was performed of:
